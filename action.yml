@@ -9,13 +9,9 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-  hardcoded1:
-    value: "hardcoded1-value"
-  hardcoded2:
-    value: "hardcoded2-value"
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.who_to_greet }}
-    - "secondarg"
+    - "ThisWillBePassedInAsDollarSign2"

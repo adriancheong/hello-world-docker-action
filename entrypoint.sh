@@ -1,7 +1,6 @@
 #!/bin/sh -l
-echo "wtg from outside ${INPUT_WHO_TO_GREET}"
-echo "Goodbye $1"
-echo "Second Arg from outside is $2"
+echo "Inputs can be also retrieved via their ENV VAR equivalent which is upper case variable prefixed with INPUT_. In this case it is \$INPUT_WHO_TO_GREET : $INPUT_WHO_TO_GREET"
+echo "Hello $1"
+echo "This is the second arg passed in as \$2 from action.yml args section: $2"
 time=$(date)
 echo "::set-output name=time::$time"
-echo "::set-output name=hardcoded2::hardcodesetto2"
