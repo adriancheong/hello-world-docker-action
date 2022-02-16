@@ -4,3 +4,4 @@ echo "Goodbye $1"
 echo "Second Arg from outside is $2"
 time=$(date)
 echo "::set-output name=time::$time"
+echo "::set-output name=hardcoded2::hardcodesetto2"
