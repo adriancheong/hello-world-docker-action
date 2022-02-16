@@ -9,8 +9,8 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-  hardcoded: "hardcoded-value"
-    description: 'The time we greeted you'
+  hardcoded:
+    value: "hardcoded-value"
 runs:
   using: 'docker'
   image: 'Dockerfile'
