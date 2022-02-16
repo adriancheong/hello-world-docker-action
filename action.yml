@@ -11,7 +11,8 @@ outputs:
     description: 'The time we greeted you'
   hardcoded1:
     value: "hardcoded1-value"
-  hardcoded2: "hardcoded2-value"
+  hardcoded2:
+    value: "hardcoded2-value"
 runs:
   using: 'docker'
   image: 'Dockerfile'
